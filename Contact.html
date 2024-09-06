@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MedMart</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PharmaMart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Addtocart.html">My Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need assistance, feel free to reach out to us through any of the methods below.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h2>Address</h2>
+                    <p>N6 Cidco,MGM Campus, Chhatrapati Sambhajinagar, Maharashtra 431001</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Phone</h2>
+                    <p>(0240) 456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Email</h2>
+                    <p><a href="mailto:support@PharmaMart.com">support@PharmaMart.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h1>Send Us a Message</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PharmaMart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

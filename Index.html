@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaMart - Online Medicine Shop</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PharmaMart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Addtocart.html">My Cart</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h2>Your Trusted Online Medicine Shop</h2>
+        <p>Get all your medicine delivered to your doorstep.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+    
+    <!-- Carousel Section -->
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="Luliford Cream.jpg" alt="Luliford Cream"><br>
+            <img src="moxikind_cv_625mg.jpg" alt="Moxikind_CV_625mg"><br>
+            <img src="Nutramide.jpg" alt="Nutramide"><br>
+            <img src="calpol_650_tablet_15s_611753_0_0.jpg" alt="Calpol 650 + Tablet.webp"><br>
+            <img src="ibugesic_orange_flavour_suspension_100ml_41630_0_1.jpg" alt="ibugesic_orange_flavour_suspension_100ml_41630_0_1"><br>
+            <img src="ENERZALLIQUID.jpeg" alt="ENERZALLIQUID">
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-button" onclick="prevslide()">❮</button>
+            <button class="carousel-button" onclick="nextSlide()">❯</button>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-container">
+        <form action="search.html" method="get">
+            <input type="text" name="query" placeholder="Search for medicines..." required>
+            <input type="submit" value="Search">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 PharmaMart. All Rights Reserved.</p>
+    </footer>
+
+    <script src="Index.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>

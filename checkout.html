@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h3>PharmaMart</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Addtocart.html">My Cart</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <div class="section">
+                <h2>Billing Details</h2>
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <div class="section">
+                <h2>Payment Information</h2>
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="exp-month">Expiry Month</label>
+                <input type="text" id="exp-month" name="exp-month" required>
+
+                <label for="exp-year">Expiry Year</label>
+                <input type="text" id="exp-year" name="exp-year" required>
+
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Grand Total: Rs.<span id="grand-total">0.00</span></p>
+            </div>
+
+            <button type="submit" id="submit-order">Place Order</button>
+        </form>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

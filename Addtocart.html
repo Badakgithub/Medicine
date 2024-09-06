@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="Addtocart.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PharmaMart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <h1>Your Shopping Cart</h1>
+    <div class="cart-container">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Items will be dynamically inserted here -->
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <h2>Cart Summary</h2>
+            <p>Total Items: <span id="total-items">0</span></p>
+            <p>Grand Total: Rs.<span id="grand-total">0.00</span></p>
+            <a href="checkout.html" class="btn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PharmaMart. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="addtocart.js"></script>
+</body>
+</html>

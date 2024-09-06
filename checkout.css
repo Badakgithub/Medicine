@@ -1,0 +1,152 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #f67f6f;
+    padding: 10px 0;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header h3 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+}
+
+nav {
+    float: right;
+    line-height: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Checkout Container */
+.checkout-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h3 {
+    color: #ffffff;
+}
+h2 {
+    color: #333;
+}
+
+
+.section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.cart-summary p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#submit-order {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-order:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .checkout-container {
+        width: 80%;
+    }
+
+    input[type="text"], input[type="email"] {
+        padding: 8px;
+    }
+
+    #submit-order {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        width: 90%;
+    }
+
+    input[type="text"], input[type="email"] {
+        padding: 6px;
+    }
+
+    #submit-order {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f67f6f;
+    color: white;
+    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

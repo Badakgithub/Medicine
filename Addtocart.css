@@ -1,0 +1,135 @@
+/* Addtocart.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #f67f6f;
+    padding: 10px 0;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+td {
+    vertical-align: middle;
+}
+
+td button {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+td button:hover {
+    background-color: #ef5350;
+}
+
+/* Cart Summary */
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+}
+
+.cart-summary p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.cart-summary .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.cart-summary .btn:hover {
+    background-color: #004d40;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f67f6f;
+    color: white;
+    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Display</title>
+    <link rel="stylesheet" href="Products.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PharmaMart</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Sign Up.html">Sign Up</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Addtocart.html">My Cart</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="medicine-container">
+        <!-- Calpol 650 + Tablet -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('calpol_650_tablet_15s_611753_0_0.jpg');"></div>
+            <h2>Calpol 650 + Tablet</h2>
+            <p>Marketer<br>
+                Glaxo SmithKline Pharmaceuticals Ltd<br>
+                Paracetamol (650mg)<br>
+                Storage<br>
+                Store below 30°C</p>
+            <p1 class="price" data-price="29.26">Rs.29.26</p1> 1 Strip 15.0 tablets in 1 strip
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-calpol">29.26</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Ibugesic Oral Suspension Orange -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('ibugesic_orange_flavour_suspension_100ml_41630_0_1.jpg');"></div>
+            <h2>Ibugesic Oral Suspension Orange</h2>
+            <p>Prescription Required<br>
+                Marketer<br>
+                Cipla Ltd<br>
+                Ibuprofen (100mg/5ml)<br>
+                Storage<br>
+                Store below 30°C.</p>
+            <p1 class="price" data-price="20.24">Rs.20.24</p1> 1 Bottle 100.0 ml in 1 bottle
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-ibugesic">20.24</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Enerzal Energy & Electrolyte Drink -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('ENERZALLIQUID.jpeg');"></div>
+            <h2>Enerzal Energy & Electrolyte Drink</h2>
+            <p>FDC Ltd<br>
+                Available in different flavours and variants.<br>
+                Product highlights:<br>
+                Maintains electrolyte balance<br>
+                Contains a balanced mix of essential salts, sugar, and electrolytes<br>
+                Helps alleviate dehydration and provide energy</p>
+            <p1 class="price" data-price="33">Rs.33</p1> 1 Bottle 500 ml in 1 bottle
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-enerzal">33</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cipla Kids Nutramide Syrup Mixed Fruit -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('Nutramide.jpg');"></div>
+            <h2>Cipla Kids Nutramide Syrup Mixed Fruit</h2>
+            <p>Marketer Cipla Ltd.<br>
+                Anti-inflammatory, Anti-bacterial, and Immunomodulatory effects<br>
+                Provides key nutrients to the body<br>
+                Strengthens immunity.</p>
+            <p1 class="price" data-price="191.42">Rs.191.42</p1> 1 Bottle of 200 ml Syrup
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-nutramide">191.42</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Luliford Cream -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('Luliford\ Cream.jpg');"></div>
+            <h2>Luliford Cream</h2>
+            <p>Prescription Required<br>
+                Marketer<br>
+                Leeford Healthcare Ltd<br>
+                Luliconazole (1% w/w)<br>
+                Storage<br>
+                Store below 30°C</p>
+            <p1 class="price" data-price="186.15">Rs.186.15</p1> 1 Tube 30.0 gm in 1 tube
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-luliford">186.15</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Moxikind-CV 625 Tablet -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('moxikind_cv_625mg.jpg');"></div>
+            <h2>Moxikind-CV 625 Tablet</h2>
+            <p>Marketer Mankind Pharma Ltd<br>
+                Amoxycillin (500mg) + Clavulanic Acid (125mg)<br>
+                Storage<br>
+                Store below 30°C.</p>
+            <p1 class="price" data-price="143.52">Rs.143.52</p1> 10.0 tablets in 1 strip
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-moxikind">143.52</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Ceftiforce Tazo Injection -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('Ceftiforce\ Tazo\ Injection.jpeg');"></div>
+            <h2>Ceftiforce Tazo Injection</h2>
+            <p>RX.Prescription Required<br>
+                Marketer<br>
+                Mankind Pharma Ltd<br>
+                Ceftriaxone (500mg) + Tazobactum (62.5mg)<br>
+                Storage<br>
+                Store below 30°C.</p>
+            <p1 class="price" data-price="78.48">Rs.78.48 </p1> 1.0 Injection in 1 vial
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-ceftiforce">78.48</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Istamet 50mg/500mg Tablet -->
+        <div class="medicine-card">
+            <div class="medicine-image" style="background-image: url('istamet-50-500mg-tablet.jpg');"></div>
+            <h2>Istamet 50mg/500mg Tablet </h2>
+            <p>Prescription Required<br>
+                Marketer<br>
+                Sun Pharmaceutical Industries Ltd<br>
+                Sitagliptin (50mg) + Metformin (500mg)<br>
+                Storage<br>
+                Store below 30°C</p>
+            <p1 class="price" data-price="130.90">Rs.130.90</p1>1 Strip 15.0 tablets in 1 strip
+            <div class="cart-actions">
+                <input type="number" class="quantity-input" value="1" min="1" max="10" onchange="updatePrice(this)">
+                <p1 class="total-price">Total: Rs<span id="total-price-istamet">130.90</span></p1><br>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize the cart
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Function to update price
+        function updatePrice(element) {
+            const parentCard = element.closest('.medicine-card');
+            const priceElement = parentCard.querySelector('.price');
+            const unitPrice = parseFloat(priceElement.getAttribute('data-price'));
+
+            const quantityInput = parentCard.querySelector('.quantity-input');
+            const quantity = parseInt(quantityInput.value);
+            const totalPrice = (unitPrice * quantity).toFixed(2);
+            const totalPriceElement = parentCard.querySelector('.total-price span');
+            totalPriceElement.textContent = totalPrice;
+        }
+
+        // Function to add item to cart
+        function addToCart(element) {
+            const parentCard = element.closest('.medicine-card');
+            const medicineName = parentCard.querySelector('h2').textContent;
+            const priceElement = parentCard.querySelector('.price');
+            const unitPrice = parseFloat(priceElement.getAttribute('data-price'));
+            const quantityInput = parentCard.querySelector('.quantity-input');
+            const quantity = parseInt(quantityInput.value);
+
+            const cartItem = {
+                name: medicineName,
+                price: unitPrice,
+                quantity: quantity,
+                totalPrice: unitPrice * quantity
+            };
+
+            // Check if item already exists in the cart
+            const existingItem = cart.find(item => item.name === cartItem.name);
+            if (existingItem) {
+                existingItem.quantity += cartItem.quantity;
+                existingItem.totalPrice += cartItem.totalPrice;
+            } else {
+                cart.push(cartItem);
+            }
+
+            // Save the cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${medicineName} has been added to the cart!`);
+        }
+
+        // Attach event listeners to Add to Cart buttons
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                addToCart(this);
+            });
+        });
+
+        // Initialize price on page load
+        window.onload = function() {
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                updatePrice(input); // Initialize price for all items
+            });
+        }
+    </script>
+    <section class="hero">
+        <a href="Addtocart.html" class="btn">Go to cart</a>
+    </section>
+    <footer>
+        <p>&copy; 2024 PharmaMart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
